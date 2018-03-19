@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+system("color F0");
+setlocale(0, "Rus");
+double x, y;
+cout << "Введите x" << endl;
+cin >> x;
+cout << "Введите y" << endl;
+cin >> y;
+cout << "Сумма равна " << x + y << endl;
+cout << "Разность х-у равна " << x - y << endl;
+cout << "Разность у-х равна " << y - x << endl;
+cout << "Произведение равно " << x*y << endl;
+cout << "Частное равно " << x / y << endl;
+system("pause");
+return 0;
+}
