@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstring>
+
+class book {
+	private:
+		std::string bookName;
+		std::string authorName;
+		int pagesAmount;
+	public:
+	void setBookName () {
+		std::cout << "Enter book name: " << std::endl;
+		std::getline ( std::cin, bookName );
+
+	}
+	void setAuthorName () {
+		std::cout << "Enter author name: " << std::endl;
+		std::getline ( std::cin, authorName );
+	}
+	void setPagesAmount () {
+		std::cout << "Enter pages amount: " << std::endl;
+		std::cin >> pagesAmount;
+	}
+	void getBookInfo () {
+		std::cout << "Book info: " << std::endl;
+		std::cout << "Author name: " << authorName << std::endl;
+		std::cout << "Book name: " << bookName << std::endl;
+		std::cout << pagesAmount << " pages" << std::endl;
+	} 
+};
+int main () {
+	system ("color 0A");
+	book book1;
+	book1.setBookName();
+	book1.setAuthorName();
+	book1.setPagesAmount();
+	book1.getBookInfo();
+	return 0;
+}
